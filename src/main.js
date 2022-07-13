@@ -1,12 +1,11 @@
 import Vue from 'vue'
-// 第三方css库 让不同的浏览器标签渲染效果一样
+
 import 'normalize.css/normalize.css' // A modern alternative to CSS resets
 
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-// 国际化语言包
 import locale from 'element-ui/lib/locale/lang/en' // lang i18n
-// 全局样式公共组件
+
 import '@/styles/index.scss' // global css
 
 import App from './App'
@@ -14,7 +13,7 @@ import store from './store'
 import router from './router'
 
 import '@/icons' // icon
-import '@/permission' // permission control 权限
+import '@/permission' // permission control
 
 /**
  * If you don't want to use mock-server
@@ -34,7 +33,7 @@ Vue.use(ElementUI, { locale })
 // 如果想要中文版 element-ui，按如下方式声明
 // Vue.use(ElementUI)
 
-Vue.config.productionTip = false // 控制台有一个生产的提示
+Vue.config.productionTip = false
 
 new Vue({
   el: '#app',
